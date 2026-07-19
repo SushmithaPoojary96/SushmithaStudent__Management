@@ -86,6 +86,7 @@ public class StudentController extends HttpServlet {
             student.setCourse(request.getParameter("course"));
 
             service.addStudent(student);
+            System.out.println("Testing the project");
 
             response.sendRedirect("StudentController?action=list");
 
