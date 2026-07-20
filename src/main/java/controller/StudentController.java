@@ -86,7 +86,7 @@ public class StudentController extends HttpServlet {
             student.setCourse(request.getParameter("course"));
 
             service.addStudent(student);
-          
+            System.out.println("Git triggering");
 
             response.sendRedirect("StudentController?action=list");
 
